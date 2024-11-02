@@ -2,6 +2,9 @@
 
 Before making a PR(Pull Request), raise an appropriate issue stating the problem statement you wish to solve for, with a valid leetcode link and a brief description of the approach involved. ONLY ONE problem statement per issue is entertained. Users with incomplete issues, that were raised previously may not contribute until that assigned issue is dealt with.
 
+## Ensure Your PR or ISSUE Looks Like This:
+`<LeetCode problem number> <problem name> <difficulty> <language>`
+
 ## Guidelines for Contributions
 
 1. **Target the "Alternatives" Folder**: You may only contribute to the "Alternatives" folder within this repository. Inside this folder, you will find subfolders for various languages (e.g., C, C++, Python).
