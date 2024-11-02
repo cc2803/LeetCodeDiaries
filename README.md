@@ -6,7 +6,7 @@ Here's the structure of this repository:
 
 ```
 home
-├── MySolutions
+├── Alternatives
 │   ├── C
 │   ├── Cpp
 │   └── Python
@@ -14,7 +14,7 @@ home
 │   ├── C
 │   ├── Cpp
 │   └── Python
-├── Alternatives
+├── MySolutions
 │   ├── C
 │   ├── Cpp
 │   └── Python
