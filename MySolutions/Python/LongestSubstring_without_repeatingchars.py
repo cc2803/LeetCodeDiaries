@@ -11,3 +11,10 @@ class Solution(object):
             max_len = max(max_len, right - left + 1)
 
         return max_len
+
+'''
+This method uses a dictionary to track letters used and its most recent index. The window is expanded from 0 to len(s), i.e,
+towards right. The if statement checks if the encountered character is within the range of the window or not. If yes, set left
+window index to the index right after where the character was last encountered. Else a new key:value pair is added.
+Max_len returns maximum of current max_len and the window size, which is essentially our answer.
+'''
