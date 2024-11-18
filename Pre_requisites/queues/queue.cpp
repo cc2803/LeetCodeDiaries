@@ -29,7 +29,7 @@ class Queue{
     }
 
     void display(){
-        cout<<"STACK ELEMENTS ARE:"<<endl;
+        cout<<"QUEUE ELEMENTS ARE:"<<endl;
         for(int i=start;i<=end;i++){
         cout<<q[i]<<" ";
         }
