@@ -16,16 +16,16 @@ class Queue{
             return end==sizeof(q)/sizeof(int)-1;
         }
 
-    void push(int value){
+    void enQueue(int value){
         end++;
         q[end]=value;
-        cout<<"Value pushed to queue"<<endl;
+        cout<<"Value enqueued to queue"<<endl;
     }
     
-    void pop(){
-        cout<<"Popped value: "<<q[start]<<endl;
+    void deQueue(){
+        cout<<"dequeued value: "<<q[start]<<endl;
         start++;
-        cout<<"Value popped"<<endl;
+        cout<<"Value dequeued"<<endl;
     }
 
     void display(){
@@ -42,23 +42,23 @@ int main(){
     Queue q;
     while(1){
         int choice;
-        cout<<"Enter your choice:\n 1-push\n 2-pop\n 3-display"<<endl;
+        cout<<"Enter your choice:\n 1-enqueue\n 2-dequeue\n 3-display"<<endl;
         cin>>choice;
         switch (choice)
         {
         case 1:
             int n;
-            if(q.isfull()) cout<<"Sorry queue is full!, cant push more!"<<endl;
+            if(q.isfull()) cout<<"Sorry queue is full!, cant enqueue more!"<<endl;
             else{
-            cout<<"Enter value to be pushed: "<<endl;
+            cout<<"Enter value to be enqueued: "<<endl;
             cin>>n;
-            q.push(n);
+            q.enQueue(n);
             }
             break;
         
         case 2:
-        if(q.isempty()) cout<<"Sorry queue is empty!, nothing to pop"<<endl;
-        else q.pop();
+        if(q.isempty()) cout<<"Sorry queue is empty!, nothing to dequeue"<<endl;
+        else q.deQueue();
             break;
         
         case 3:
