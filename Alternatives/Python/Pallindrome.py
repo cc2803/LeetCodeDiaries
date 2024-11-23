@@ -15,3 +15,14 @@ class Solution:
                 res=res*10+n2%10
                 n2//=10
             return x==res
+
+#BONUS approach (string char comparison)
+
+class Solution(object):
+    def isPalindrome(self, x):
+        str_x = str(x)
+        l=len(str_x)
+        for i in range(l):
+            if str_x[i]!=str_x[l-1-i]:
+                return False
+        return True
