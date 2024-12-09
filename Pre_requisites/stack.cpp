@@ -16,8 +16,7 @@ class stack{
         }
 
         void push(int value){
-                top++;
-                s[top]=value;
+                s[++top]=value;
                 cout<<"Value pushed to stack"<<endl;
         }
 
@@ -42,7 +41,7 @@ int main(){
     stack s;
     while(1){
         int choice;
-        cout<<"Enter your choice:\n 1-push\n 2-pop\n 3-display"<<endl;
+        cout<<"Enter your choice:\n 1-push\n 2-pop\n 3-display\n Any other key to exit."<<endl;
         cin>>choice;
         switch (choice)
         {

@@ -17,8 +17,7 @@ class Queue{
         }
 
     void enQueue(int value){
-        end++;
-        q[end]=value;
+        q[++end]=value;
         cout<<"Value enqueued to queue"<<endl;
     }
     
@@ -42,7 +41,7 @@ int main(){
     Queue q;
     while(1){
         int choice;
-        cout<<"Enter your choice:\n 1-enqueue\n 2-dequeue\n 3-display"<<endl;
+        cout<<"Enter your choice:\n 1-enqueue\n 2-dequeue\n 3-display\n Any other Key to exit."<<endl;
         cin>>choice;
         switch (choice)
         {
