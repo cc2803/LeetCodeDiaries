@@ -26,7 +26,7 @@ public:
             start = 0;
             end = 0;
         } else {
-            start = (start - 1 + size) % size; 
+            start = (start + size - 1) % size; 
         }
         q[start] = value;
         cout << "Value pushed from the front: " << value << endl;
@@ -97,7 +97,7 @@ int main() {
     DeQueue dq;
     while (1) {
         int choice;
-        cout << "Enter your choice:\n 1-push_front\n 2-push_back\n 3-pop_front\n 4-pop_back\n 5-display\n 6-exit" << endl;
+        cout << "Enter your choice:\n 1-push_front\n 2-push_back\n 3-pop_front\n 4-pop_back\n 5-display\n Any other key to exit." << endl;
         cin >> choice;
         switch (choice) {
         case 1:
