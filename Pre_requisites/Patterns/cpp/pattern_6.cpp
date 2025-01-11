@@ -1,4 +1,4 @@
-'''
+/*
 Problem statement:
 Aryan and his friends are very fond of the pattern. For a given integer ‘N’, they want to make the Reverse N-Number Triangle.
 
@@ -11,10 +11,14 @@ Output:
 1 2
 1
 
-'''
+*/
 
-def nNumberTriangle(n: int) -> None:
-    for i in range(n,0,-1):
-        for j in range(1,i+1):
-            print(j,end=" ")
-        print()
+void nNumberTriangle(int n) {
+    
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=i;j++){
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
+}
