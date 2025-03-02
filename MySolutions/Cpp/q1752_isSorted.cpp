@@ -1,3 +1,5 @@
+//Boolean function to check sorted status of an array
+
 class Solution {
 public:
     bool check(vector<int>& nums) {
